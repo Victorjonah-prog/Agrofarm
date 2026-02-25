@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Document</title>
+</head>
+
+<body class="font-poppins m-0 p-0 overflow-hidden bg-black">
+
+  <!-- Full screen wrapper -->
+  <div class="relative w-screen h-screen overflow-hidden">
+
+    <!-- Background farm image -->
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+         style="background-image: url('./img/unsplash_b-0-LM0wzWM.jpg');">
+    </div>
+
+    <!-- Dark overlay — heavier at top, lighter in middle, dark at bottom -->
+    <div class="absolute inset-0 bg-gradient-to-b from-slate-800/80 via-slate-600/10 to-slate-950/40"></div>
+
+    <!-- Foreground content -->
+    <div class="relative z-10 flex flex-col h-full">
+
+      <!-- ===== STATUS BAR — mobile only (hidden sm+) ===== -->
+      <div class="flex sm:hidden items-center justify-between px-5 pt-3 pb-1 text-white">
+        <span class="text-sm font-semibold">9:41</span>
+        <div class="flex items-center gap-2">
+          <!-- Signal bars -->
+          <div class="flex items-end gap-[2px]" style="height:13px;">
+            <div class="w-[3px] rounded-sm bg-white" style="height:3px;"></div>
+            <div class="w-[3px] rounded-sm bg-white" style="height:6px;"></div>
+            <div class="w-[3px] rounded-sm bg-white" style="height:9px;"></div>
+            <div class="w-[3px] rounded-sm bg-white" style="height:12px;"></div>
+          </div>
+          <!-- WiFi -->
+          <svg width="16" height="12" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="16" r="2" fill="white"/>
+            <path d="M7.76 11.76a6 6 0 0 1 8.48 0" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M4.93 8.93a10 10 0 0 1 14.14 0" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+          </svg>
+          <!-- Battery -->
+          <div class="flex items-center gap-[2px]">
+            <div class="border border-white rounded-[2px] p-[1.5px] flex items-center" style="width:22px; height:12px;">
+              <div class="rounded-[1px] h-full bg-green-400" style="width:52%;"></div>
+            </div>
+            <div class="bg-white rounded-r-[1px]" style="width:3px; height:6px;"></div>
+          </div>
+        </div>
+      </div>
+      <!-- ===== END STATUS BAR ===== -->
+
+      <!-- Logo — upper portion -->
+      <div class="flex items-center justify-center mt-12">
+        <img src="./img/Ellipse 3.jpg" class="rounded-full" alt="">
+      </div>
+
+      <!-- Spacer pushes text to middle-lower area -->
+      <div class="flex-1"></div>
+
+      <!-- Description text — sits over the field rows -->
+      <div class="px-8 sm:px-16 text-center mb-8 sm:mb-10">
+        <p class="text-white text-base sm:text-lg md:text-xl font-medium leading-relaxed">
+            Explore our vibrant marketplace where farmers and developers converge to exchange a diverse array of agricultural products
+        </p>
+      </div>
+
+      <!-- Bottom buttons -->
+      <div class="flex items-center justify-between gap-4 px-8 sm:px-16 pb-14 sm:pb-16">
+
+        <!-- Discover More — green pill -->
+        <button class="flex-1 bg-green-500 text-white font-semibold text-sm sm:text-base py-4 rounded-full ">
+          Discover<br/>More
+        </button>
+
+        <!-- Skip — yellow pill -->
+        <button class="flex-1 h-[100%] bg-yellow-500 text-black font-semibold text-sm sm:text-base py-4 rounded-full shadow-lg flex items-center justify-center gap-1">
+          Skip
+          <span class="font-bold text-base">&raquo;</span>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

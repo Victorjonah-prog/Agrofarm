@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Login</title>
+</head>
+<body class="h-screen text-white flex flex-col font-sans relative overflow-hidden">
+
+  <!-- Full-screen background image layer -->
+  <div class="absolute inset-0 z-0">
+    <img
+      src="./img/unsplash_b-0-LM0wzWM.jpg"
+      alt="Farm field background"
+      class="w-full h-full object-cover"
+    />
+    <!-- Dark overlay for readability -->
+    <div class="absolute inset-0 bg-black/55"></div>
+  </div>
+
+  <!-- Status bar – on top of background -->
+  <div class="relative z-10 flex justify-between items-center px-5 pt-2 pb-1 text-sm bg-black/20 backdrop-blur-sm md:hidden">
+    <div>9:41</div>
+    <div class="flex items-center gap-2">
+      <svg class="size-4" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 21q-3.75 0-6.375-2.625T3 12t2.625-6.375T12 3t6.375 2.625T21 12t-2.625 6.375T12 21m0-2q2.9 0 4.95-2.05T19 12t-2.05-4.95T12 5T7.05 7.05T5 12t2.05 4.95T12 19m-1-3l-4-4l1.4-1.4L11 12.2l5.6-5.6L18 8z"/>
+      </svg>
+      <svg class="size-5 h-4" fill="currentColor" viewBox="0 0 20 16">
+        <path d="M18 14h-2V4h2v10zM4 14H2V4h2v10zM16 2H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+      </svg>
+      <div class="flex items-center">
+        <div class="w-8 h-3.5 bg-white rounded relative">
+          <div class="absolute top-0.5 left-0.5 w-5 h-2.5 bg-black rounded"></div>
+        </div>
+        <span class="ml-1 text-xs">52%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content – centered over background -->
+  <div class="relative z-10 flex-1 flex flex-col items-center justify-center px-6">
+    <!-- Logo -->
+    <div class="mb-10 text-center">
+      <img src="./img/Ellipse 3.jpg" class="rounded-full" alt="">
+    </div>
+
+    <div class="w-full max-w-sm space-y-6">
+      <p class="text-center text-gray-200 drop-shadow">
+        Already have an account?
+      </p>
+
+      <button class="w-full py-3.5 text-yellow-300 backdrop-blur-sm rounded-full text-lg font-medium border border-green-600/50">
+        Login AgroFarm
+      </button>
+
+      <p class="text-center text-gray-300 pt-4 drop-shadow">
+        Don’t have an account? 
+        <a href="#" class="text-green-400 font-medium">Register now</a>
+      </p>
+
+      <!-- Login form fields -->
+      <div class="pt-8 space-y-5">
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="User Name"
+            class="w-full px-5 py-4 bg-white/80 backdrop-blur-md border border-gray-600/70 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-green-500"
+          />
+          <span class="absolute right-5 top-1/2 -translate-y-1/2 text-green-400 text-2xl">👤</span>
+        </div>
+
+        <button class="w-full py-4 bg-yellow-500/95 rounded-full text-lg font-semibold text-black flex items-center justify-center gap-2 border border-yellow-400/40">
+          Login
+          <span class="text-xl">→</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative z-10 h-8"></div>
+
+</body>
+</html>

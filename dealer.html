@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="h-screen">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>dealer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen relative overflow-hidden text-white font-sans">
+
+  <!-- Full-screen farm field background -->
+  <div class="absolute inset-0 -z-10">
+    <img
+      src="/img/unsplash_b-0-LM0wzWM.jpg"
+      alt="Farm field background"
+      class="h-full w-full object-cover "
+    />
+    <!-- Very subtle dark overlay to keep text readable (adjust opacity if needed) -->
+    <div class="absolute inset-0 bg-black/25"></div>
+  </div>
+
+  <!-- Status bar – only on small screens -->
+  <div class="relative z-30 flex justify-between items-center px-5 pt-2.5 pb-1.5 text-sm bg-black/20 backdrop-blur-md md:hidden">
+    <div>9:41</div>
+    <div class="flex items-center gap-2.5">
+      <svg class="size-4" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 21q-3.75 0-6.375-2.625T3 12t2.625-6.375T12 3t6.375 2.625T21 12t-2.625 6.375T12 21m0-2q2.9 0 4.95-2.05T19 12t-2.05-4.95T12 5T7.05 7.05T5 12t2.05 4.95T12 19m-1-3l-4-4l1.4-1.4L11 12.2l5.6-5.6L18 8z"/>
+      </svg>
+      <svg class="size-5 h-4" fill="currentColor" viewBox="0 0 20 16">
+        <path d="M18 14h-2V4h2v10zM4 14H2V4h2v10zM16 2H4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+      </svg>
+      <div class="flex items-center gap-1">
+        <div class="w-9 h-4 bg-white rounded-sm relative">
+          <div class="absolute top-0.5 left-0.5 w-6 h-3 bg-black rounded-sm"></div>
+        </div>
+        <span class="text-xs font-medium">58%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main centered content -->
+  <main class="relative z-20 flex-1 flex flex-col items-center justify-center px-6 pb-20">
+
+    <!-- Logo + Welcome text -->
+    <div class="flex flex-col items-center mb-16">
+      <!-- Logo -->
+     <img src="/img/Ellipse 3.jpg" class="rounded-full" alt="">
+
+      <h1 class="text-4xl text-yellow-300 md:text-5xl font-bold text-center tracking-tight drop-shadow-2xl">
+        Welcome !
+      </h1>
+    </div>
+
+    <!-- Farmer icon circle -->
+    <div class="w-44 h-44 md:w-52 md:h-52 flex items-center justify-center mb-12 ">
+     <img src="/img/Ellipse 11.jpg" class="rounded-full" alt="">
+    </div>
+
+    <!-- Farmer button -->
+    <button class="bg-[#f4a261] text-white font-bold text-xl py-5 px-12 rounded-2xl shadow-lg mb-8 w-full max-w-xs">
+      Dealer
+    </button>
+
+    <!-- Get Started button -->
+    <button class="bg-[#ffd60a] text-black font-bold text-xl py-5 px-12 rounded-2xl shadow-lg w-full max-w-xs flex items-center justify-center gap-3">
+      Get Started
+      <span class="text-2xl">→</span>
+    </button>
+
+  </main>
+
+  <!-- Bottom safe area -->
+  <div class="h-8 bg-black/30 backdrop-blur-md"></div>
+
+</body>
+</html>
